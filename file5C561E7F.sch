@@ -1,0 +1,194 @@
+EESchema Schematic File Version 4
+LIBS:Transciever-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 3100 2600 0    50   Input ~ 0
+RF_MIX_IN_1
+$Comp
+L Transformer:TRANSF3 TR?
+U 1 1 5C5620AB
+P 3750 2900
+F 0 "TR?" H 3750 3378 50  0000 C CNN
+F 1 "TRANSF3" H 3750 3287 50  0000 C CNN
+F 2 "" H 3750 2900 50  0001 C CNN
+F 3 "" H 3750 2900 50  0001 C CNN
+	1    3750 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transformer:TRANSF3 TR?
+U 1 1 5C5620B2
+P 5500 2850
+F 0 "TR?" H 5500 2372 50  0000 C CNN
+F 1 "TRANSF3" H 5500 2463 50  0000 C CNN
+F 2 "" H 5500 2850 50  0001 C CNN
+F 3 "" H 5500 2850 50  0001 C CNN
+	1    5500 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5C5620B9
+P 4400 2600
+F 0 "D?" H 4400 2816 50  0000 C CNN
+F 1 "D" H 4400 2725 50  0000 C CNN
+F 2 "" H 4400 2600 50  0001 C CNN
+F 3 "~" H 4400 2600 50  0001 C CNN
+	1    4400 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5C5620C0
+P 4800 2600
+F 0 "D?" H 4800 2816 50  0000 C CNN
+F 1 "D" H 4800 2725 50  0000 C CNN
+F 2 "" H 4800 2600 50  0001 C CNN
+F 3 "~" H 4800 2600 50  0001 C CNN
+	1    4800 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5C5620C7
+P 4400 3150
+F 0 "D?" H 4400 2934 50  0000 C CNN
+F 1 "D" H 4400 3025 50  0000 C CNN
+F 2 "" H 4400 3150 50  0001 C CNN
+F 3 "~" H 4400 3150 50  0001 C CNN
+	1    4400 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5C5620CE
+P 4800 3150
+F 0 "D?" H 4800 2934 50  0000 C CNN
+F 1 "D" H 4800 3025 50  0000 C CNN
+F 2 "" H 4800 3150 50  0001 C CNN
+F 3 "~" H 4800 3150 50  0001 C CNN
+	1    4800 3150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4550 2600 4650 2600
+Wire Wire Line
+	4550 3150 4600 3150
+Wire Wire Line
+	4250 2600 4250 2850
+Wire Wire Line
+	4950 2600 4950 2650
+Wire Wire Line
+	3950 2800 3950 2900
+Wire Wire Line
+	5300 2750 5300 2850
+Text HLabel 4100 3700 2    50   Output ~ 0
+MXR_OUT
+Wire Wire Line
+	5300 2550 5300 2650
+Wire Wire Line
+	5300 2650 4950 2650
+Connection ~ 4950 2650
+Wire Wire Line
+	4950 2650 4950 3150
+Wire Wire Line
+	5300 3150 5300 3450
+Wire Wire Line
+	5300 3450 4150 3450
+Wire Wire Line
+	4150 3450 4150 2850
+Wire Wire Line
+	4150 2850 4250 2850
+Connection ~ 4250 2850
+Wire Wire Line
+	4250 2850 4250 3150
+Wire Wire Line
+	3950 2600 3950 2200
+Wire Wire Line
+	3950 2200 4650 2200
+Wire Wire Line
+	4650 2200 4650 2600
+Connection ~ 4650 2600
+Wire Wire Line
+	3950 3200 3950 3350
+Wire Wire Line
+	3950 3350 4600 3350
+Wire Wire Line
+	4600 3350 4600 3150
+Connection ~ 4600 3150
+Wire Wire Line
+	4600 3150 4650 3150
+Wire Wire Line
+	5300 2850 5050 2850
+Wire Wire Line
+	5050 2850 5050 3700
+Connection ~ 5300 2850
+Wire Wire Line
+	5300 2850 5300 2950
+$Comp
+L power:GND #PWR?
+U 1 1 5C562A0C
+P 5050 3700
+F 0 "#PWR?" H 5050 3450 50  0001 C CNN
+F 1 "GND" H 5055 3527 50  0000 C CNN
+F 2 "" H 5050 3700 50  0001 C CNN
+F 3 "" H 5050 3700 50  0001 C CNN
+	1    5050 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 2900 4050 2900
+Connection ~ 3950 2900
+Wire Wire Line
+	3950 2900 3950 3000
+Wire Wire Line
+	3100 2600 3550 2600
+$Comp
+L power:GND #PWR?
+U 1 1 5C5634A4
+P 3550 3350
+F 0 "#PWR?" H 3550 3100 50  0001 C CNN
+F 1 "GND" H 3555 3177 50  0000 C CNN
+F 2 "" H 3550 3350 50  0001 C CNN
+F 3 "" H 3550 3350 50  0001 C CNN
+	1    3550 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 3350 3550 3200
+Text HLabel 5950 2550 2    50   Input ~ 0
+LOCAL_OSC_1
+Wire Wire Line
+	4050 2900 4050 3700
+Wire Wire Line
+	4050 3700 4100 3700
+Wire Wire Line
+	5700 2550 5950 2550
+$Comp
+L power:GND #PWR?
+U 1 1 5C564ED0
+P 5700 3250
+F 0 "#PWR?" H 5700 3000 50  0001 C CNN
+F 1 "GND" H 5705 3077 50  0000 C CNN
+F 2 "" H 5700 3250 50  0001 C CNN
+F 3 "" H 5700 3250 50  0001 C CNN
+	1    5700 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 3150 5700 3250
+Text Notes 3900 1650 0    50   ~ 0
+design taken from http://hevirred.blogspot.com/2017/08/diode-ring-mixer.html
+$EndSCHEMATC
