@@ -1,0 +1,81 @@
+EESchema Schematic File Version 4
+LIBS:Transciever-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CustomSymbols:FST3253 U?
+U 1 1 5C60F5A8
+P 5000 3300
+F 0 "U?" H 5000 4078 50  0000 C CNN
+F 1 "FST3253" H 5000 3987 50  0000 C CNN
+F 2 "" H 4900 3400 50  0001 C CNN
+F 3 "" H 4900 3400 50  0001 C CNN
+	1    5000 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C60F650
+P 5150 2450
+F 0 "C?" V 4898 2450 50  0000 C CNN
+F 1 "C" V 4989 2450 50  0000 C CNN
+F 2 "" H 5188 2300 50  0001 C CNN
+F 3 "~" H 5150 2450 50  0001 C CNN
+	1    5150 2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5000 2450 5000 2700
+$Comp
+L power:GND #PWR?
+U 1 1 5C60F6D8
+P 5300 2550
+F 0 "#PWR?" H 5300 2300 50  0001 C CNN
+F 1 "GND" H 5305 2377 50  0000 C CNN
+F 2 "" H 5300 2550 50  0001 C CNN
+F 3 "" H 5300 2550 50  0001 C CNN
+	1    5300 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 2450 5300 2550
+$Comp
+L power:+5V #PWR?
+U 1 1 5C60F7CF
+P 5000 2200
+F 0 "#PWR?" H 5000 2050 50  0001 C CNN
+F 1 "+5V" H 5015 2373 50  0000 C CNN
+F 2 "" H 5000 2200 50  0001 C CNN
+F 3 "" H 5000 2200 50  0001 C CNN
+	1    5000 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 2200 5000 2450
+Connection ~ 5000 2450
+$Comp
+L power:GND #PWR?
+U 1 1 5C60F843
+P 5000 4000
+F 0 "#PWR?" H 5000 3750 50  0001 C CNN
+F 1 "GND" H 5005 3827 50  0000 C CNN
+F 2 "" H 5000 4000 50  0001 C CNN
+F 3 "" H 5000 4000 50  0001 C CNN
+	1    5000 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 4000 5000 3900
+$EndSCHEMATC
